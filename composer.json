@@ -1,0 +1,19 @@
+{
+    "name": "oscorp/pet",
+    "description": "Find the owner of a lost pet thanks to the qr code",
+    "type": "project",
+    "autoload": {
+        "psr-4": {
+            "Oscorp\\Pet\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Florexianer",
+            "email": "8111@htl.rennweg.at"
+        }
+    ],
+    "require": {
+        "endroid/qr-code": "^4.4"
+    }
+}
