@@ -37,7 +37,12 @@ class Owner
 
     public function toString(): string
     {
-        return 'Name: '.$this->name.'\n Phone-number:'.$this->getPhoneNumber();
+        return 'Name: '.$this->name.PHP_EOL.'Phone-number:'.$this->getPhoneNumber();
+    }
+
+
+    function isValidPhoneNumber(string $phoneNumber) {
+        return preg_match('/(\(?([\d \-\)\–\+\/\(]+){6,}\)?([ .\-–\/]?)([\d]+))/', $phoneNumber);
     }
 
 }
